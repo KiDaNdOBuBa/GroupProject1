@@ -8,163 +8,84 @@
     tools:context=".MainFragment">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/women_box"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/women_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_women"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/women_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_women"
         android:text="@string/women"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBottom_toTopOf="@id/baby_box"
+        app:layout_constraintEnd_toStartOf="@id/man_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/man_box"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/man_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_person"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-         />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/man_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_person"
         android:text="@string/man"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintBottom_toTopOf="@id/plane_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/women_box"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/baby_box"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/baby_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_baby"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-       />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/baby_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_baby"
         android:text="@string/baby"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintBottom_toTopOf="@id/tech_boc"
+        app:layout_constraintEnd_toStartOf="@id/plane_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/women_box" />
 
-
-    <ImageView
-        android:id="@+id/imageView5"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/plane_box"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/plane_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_plane"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        />
-
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/plane_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_plane"
         android:text="@string/plane"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
+        app:layout_constraintBottom_toTopOf="@id/food_drink_box"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/baby_box"
+        app:layout_constraintTop_toBottomOf="@id/man_box" />
 
-    <ImageView
-        android:id="@+id/imageView7"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tech_boc"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/phone_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_phone"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/phone_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_phone"
         android:text="@string/tech"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/food_drink_box"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@id/baby_box" />
 
-
-    <ImageView
-        android:id="@+id/imageView8"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/food_drink_box"
+        style="@style/box_text_style"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/food_drink_bg"
-        android:paddingVertical="@dimen/dimen_20"
-        android:src="@drawable/ic_coffee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/food_drink_bg"
-        android:gravity="center"
-        android:paddingBottom="@dimen/dimen_10"
+        android:drawableTop="@drawable/ic_coffee"
         android:text="@string/foods_drink"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dimen_30"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintStart_toEndOf="@id/tech_boc"
+        app:layout_constraintTop_toBottomOf="@id/plane_box" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/button_draw.xml" value="0.113" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/edit_text_draw.xml" value="0.113" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/fragment_bg_draw.xml" value="0.113" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_baby.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_coffee.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_password.xml" value="0.1595" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_person.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_phone.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_plane.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_username.xml" value="0.113" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/drawable/ic_women.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/activity_android_test.xml" value="0.11367753623188406" />
         <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/fragment_main.xml" value="0.18" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/fragment_data_take.xml" value="0.25" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/fragment_main_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/fragment_women_page.xml" value="0.22" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/show_fragment.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/rober/AndroidStudioProjects/GroupProject/app/src/main/res/layout/test_fragment.xml" value="0.2" />
       </map>
     </option>
   </component>

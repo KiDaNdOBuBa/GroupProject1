@@ -8,4 +8,10 @@
     <string name="plane">Plane</string>
     <string name="foods_drink">Foods,Drink</string>
     <string name="tech">Tech</string>
+    <string name="instagram">Instagram</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_password">forget password?</string>
+    <string name="log_in">LOG IN</string>
+    <string name="welcome">Welcome</string>
 </resources>

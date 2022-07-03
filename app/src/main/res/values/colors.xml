@@ -14,4 +14,6 @@
     <color name="phone_bg">#3c626b</color>
     <color name="food_drink_bg">#2d515f</color>
     <color name="main_bg">#204057</color>
+    <color name="bg_start_color">#822889</color>
+    <color name="bt_color">#5F1CA1</color>
 </resources>
