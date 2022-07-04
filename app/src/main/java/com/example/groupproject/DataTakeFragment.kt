@@ -15,19 +15,17 @@ private const val ARG_PARAM1 = "param1"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [DataTake.newInstance] factory method to
+ * Use the [DataTakeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-// TODO: Rename DataTakeFragment or WelcomeFragment
-class DataTake : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var usernameGetter: String? = null
+class DataTakeFragment : Fragment() {
+    private var usernameTake: String? = null
     private lateinit var usernameSet: AppCompatTextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            usernameGetter = it.getString(KEY)
+            usernameTake = it.getString(KEY)
         }
     }
 
@@ -37,7 +35,7 @@ class DataTake : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_data_take, container, false)
-        initFun(view)
+        initView()
         putterFun()
         return view
     }
@@ -45,13 +43,11 @@ class DataTake : Fragment() {
     @SuppressLint("SetTextI18n")
     private fun putterFun(){
 //TODO use String.format
-        usernameSet.text = "dear $usernameGetter"
+        usernameSet.text = "dear $usernameTake"
     }
 
-//TODO rename to initView
-//TODO usernameSet = requireView().findViewById(R.id.tv_put_username)
-    private fun initFun(view:View){
-        usernameSet = view.findViewById(R.id.tv_put_username)
+    private fun initView(){
+        usernameSet = requireView().findViewById(R.id.tv_put_username)
     }
 
     companion object {
@@ -59,16 +55,14 @@ class DataTake : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment.
+         * @param username Parameter 1.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String) =
-            DataTake().apply {
+        fun newInstance(username: String) =
+            DataTakeFragment().apply {
                 arguments = Bundle().apply {
-                    putString(KEY, param1)
+                    putString(KEY, username)
                 }
             }
     }
