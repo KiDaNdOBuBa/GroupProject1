@@ -18,6 +18,7 @@ private const val ARG_PARAM1 = "param1"
  * Use the [DataTake.newInstance] factory method to
  * create an instance of this fragment.
  */
+// TODO: Rename DataTakeFragment or WelcomeFragment
 class DataTake : Fragment() {
     // TODO: Rename and change types of parameters
     private var usernameGetter: String? = null
@@ -43,9 +44,12 @@ class DataTake : Fragment() {
 
     @SuppressLint("SetTextI18n")
     private fun putterFun(){
+//TODO use String.format
         usernameSet.text = "dear $usernameGetter"
     }
 
+//TODO rename to initView
+//TODO usernameSet = requireView().findViewById(R.id.tv_put_username)
     private fun initFun(view:View){
         usernameSet = view.findViewById(R.id.tv_put_username)
     }

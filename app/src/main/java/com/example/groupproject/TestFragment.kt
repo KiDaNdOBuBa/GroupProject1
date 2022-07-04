@@ -31,7 +31,7 @@ class TestFragment : Fragment() {
     private lateinit var dataFragment: Fragment
     private lateinit var bt_login: AppCompatTextView
 
-
+//TODO sa ches ogtagorcel jnji
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -49,6 +49,7 @@ class TestFragment : Fragment() {
         initListener(view)
     }
 
+//TODO sa ches ogtagorcel jnji
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -69,10 +70,13 @@ class TestFragment : Fragment() {
     }
 
     private fun goToDataFragment() {
+//TODO instead of tag use Constants
         requireActivity().supportFragmentManager.beginTransaction()
             .add(R.id.container, DataTake.newInstance(usernameEditText.text.toString()), "tag").addToBackStack("tag").commit()
     }
 
+//TODO rename to initView
+//TODO dataFragment = DataTake() object sarqel es u erbeq ches ogtagorcel, jnji
     private fun initFun(view: View) {
         dataFragment = DataTake()
         usernameEditText = view.findViewById(R.id.et_username)
@@ -81,25 +85,32 @@ class TestFragment : Fragment() {
     }
 
     private fun initListener(view: View) {
+        // TODO use val, inqnela qez hushum da, u jisht klini sa amenaverevum haytarares lateinit-ov
         var loginTemp = usernameEditText.text.toString()
         var passwordTemp = passwordEditText.text.toString()
         bt_login.setOnClickListener {
+//TODO datark filderov henc skzbic stexa mtnum
             if (!(loginTemp.isNotEmpty() && loginTemp[0].isUpperCase() && loginTemp.length > 7 && passwordTemp.isNotEmpty() && !passwordTemp[0].isDigit() && passwordTemp.length > 7)) {
                 Toast.makeText(
                     requireContext(),
+//TODO use string res for "You have been successfully logged in"
                     "You have been successfully logged in",
                     Toast.LENGTH_SHORT
                 ).show()
                 goToDataFragment()
+//TODO voch te ev ev ayl kam kam
             } else if (passwordTemp.isNotEmpty() && !passwordTemp[0].isDigit() && passwordTemp.length > 7) {
                 Snackbar.make(
                     view.findViewById(R.id.root),
+//TODO use string res for "Password is not valid"
                     "Password is not valid",
                     Snackbar.LENGTH_SHORT
                 ).show()
+//TODO voch te ev ev ayl kam kam
             } else if (loginTemp.isNotEmpty() && loginTemp[0].isUpperCase() && loginTemp.length > 7) {
                 Snackbar.make(
                     view.findViewById(R.id.root),
+//TODO use string res for "Username is not valid"
                     "Username is not valid",
                     Snackbar.LENGTH_SHORT
                 ).show()

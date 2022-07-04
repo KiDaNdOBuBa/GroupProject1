@@ -8,6 +8,8 @@
     android:background="@drawable/fragment_bg_draw"
     tools:context=".TestFragment">
 
+    <!--TODO use resource and style" -->
+    <!--TODO masmab es ogtagorcel resource@ -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start"
         android:layout_width="wrap_content"
@@ -22,7 +24,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="35dp" />
 
-
+//TODO why app:layout_constraintHorizontal_bias="0.0"? jisht chi nkarum sra patjarov
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
