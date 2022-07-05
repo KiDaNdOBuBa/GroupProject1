@@ -8,34 +8,30 @@
     android:background="@drawable/fragment_bg_draw"
     tools:context=".TestFragment">
 
-    <!--TODO use resource and style" -->
-    <!--TODO masmab es ogtagorcel resource@ -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="35dp" />
+        app:layout_constraintGuide_begin="@dimen/dimen_35" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="35dp" />
+        app:layout_constraintGuide_end="@dimen/dimen_35" />
 
-//TODO why app:layout_constraintHorizontal_bias="0.0"? jisht chi nkarum sra patjarov
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="@dimen/dimen_140"
         android:fontFamily="@font/aclonica"
         android:text="@string/instagram"
         android:textColor="@color/white"
-        android:textSize="60sp"
+        android:textSize="@dimen/dimen_60sp"
         app:layout_constraintEnd_toEndOf="@+id/guideline_end"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_50"
         style="@style/edit_text_user"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/guideline_end"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -67,7 +63,7 @@
         android:layout_marginTop="@dimen/dimen_10"
         android:text="@string/forget_password"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/dimen_20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline_end"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
 

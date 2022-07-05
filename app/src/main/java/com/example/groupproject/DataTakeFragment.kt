@@ -6,18 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatTextView
 import com.example.groupproject.Constants.Companion.KEY
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [DataTakeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class DataTakeFragment : Fragment() {
     private var usernameTake: String? = null
     private lateinit var usernameSet: AppCompatTextView
@@ -35,29 +27,30 @@ class DataTakeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_data_take, container, false)
-        initView()
+        initView(view)
+        showToast()
         putterFun()
         return view
     }
 
-    @SuppressLint("SetTextI18n")
-    private fun putterFun(){
-//TODO use String.format
-        usernameSet.text = "dear $usernameTake"
+    private fun showToast(){
+        Toast.makeText(
+            requireContext(),
+            getString(R.string.success_login),
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
-    private fun initView(){
-        usernameSet = requireView().findViewById(R.id.tv_put_username)
+    @SuppressLint("SetTextI18n")
+    private fun putterFun(){
+        usernameSet.text = String.format("dear %s",usernameTake)
+    }
+
+    private fun initView(view:View){
+        usernameSet = view.findViewById(R.id.tv_put_username)
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param username Parameter 1.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(username: String) =
             DataTakeFragment().apply {
@@ -66,6 +59,4 @@ class DataTakeFragment : Fragment() {
                 }
             }
     }
-
-
 }
